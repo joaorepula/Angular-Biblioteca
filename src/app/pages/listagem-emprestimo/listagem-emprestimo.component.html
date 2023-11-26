@@ -1,0 +1,14 @@
+<!-- listagem-emprestimo.component.html -->
+
+<h1>Listagem de empréstimos</h1>
+
+<table id="table">
+  <tr>
+    <th>livroId</th>
+    <th>UsuarioId</th>
+  </tr>
+  <tr *ngFor="let p of livros">
+    <td>{{ p.livroId }}</td>
+    <td>{{ p.usuarioId }}</td>
+  </tr>
+</table>

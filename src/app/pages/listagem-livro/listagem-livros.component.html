@@ -1,0 +1,20 @@
+<h1>Listagem de produtos</h1>
+
+<table id="table">
+  <tr>
+    <th>Título</th>
+    <th>Descrição</th>
+    <th>Categoria</th>
+    <th>Status</th>
+  </tr>
+  <tr *ngFor="let p of livros">
+    <td>{{ p.livroId }}</td>
+    <td>{{ p.autor }}</td>
+    <td>{{ p.totalPaginas }}</td>
+    <td>{{ p.titulo }}</td>
+    <td>{{ p.descricao }}</td>
+    <td>{{ p.estoque }}</td>
+    <td><button (click)="emprestimo(p)">Realizar Empréstimo</button></td>
+    <td><button (click)="devolver(p)">Devolver Empréstimo</button></td>
+  </tr>
+</table>

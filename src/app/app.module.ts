@@ -8,9 +8,19 @@ import { ListarLivroComponent } from "./pages/listagem-livro/listagem-livros.com
 import { EmprestimoListarComponent } from "./pages/listagem-emprestimo/listagem-emprestimo.component";
 
 import { HttpClientModule } from "@angular/common/http";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+
+
 @NgModule({
   declarations: [AppComponent, ListarLivroComponent, LoginUsuario,ListarLivroComponent,EmprestimoListarComponent],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule,HttpClientModule ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule,HttpClientModule, BrowserAnimationsModule, MatToolbarModule,
+   MatSidenavModule,MatListModule, MatIconModule, MatInputModule,MatButtonModule],
   providers: [],
   bootstrap: [AppComponent]
 })

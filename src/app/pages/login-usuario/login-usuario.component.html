@@ -1,9 +1,20 @@
+<!-- Importe os módulos do Angular Material no seu módulo Angular -->
+<!-- Exemplo: em seu módulo 'app.module.ts' -->
+<!--
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+-->
+<!-- Adicione os módulos ao array 'imports' na sua anotação @NgModule -->
+
 <h1>Identificador</h1>
 
-<div>
-  <label>Digite seu número identificador!:</label>
-  <input type="text" [(ngModel)]="usuarioId" />
-</div>
-<div>
-  <button (click)="cadastrar()">Buscar</button>
+<div class="login-container" fxLayout="column" fxLayoutAlign="center center">
+  <mat-form-field class="input-field">
+    <label>Digite seu número identificador:</label>
+    <input matInput type="text" [(ngModel)]="usuarioId" />
+  </mat-form-field>
+
+  <div class="button-container">
+    <button mat-raised-button color="primary" (click)="cadastrar()">Buscar</button>
+  </div>
 </div>

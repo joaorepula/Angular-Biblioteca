@@ -1,1 +1,37 @@
-<router-outlet></router-outlet>
+<mat-toolbar color="primary">
+    <button class="menu" mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon class="icon"> menu </mat-icon>
+    </button>
+    <span>Biblioteca Osório</span>
+  </mat-toolbar>
+  
+  <mat-sidenav-container class="container">
+    <mat-sidenav #sidenav [opened]="true" mode="side">
+      <mat-nav-list>
+        <a mat-list-item routerLink="/pages/listagem-emprestimo/listar">
+          <div class="item">
+            <mat-icon class="icon"> list </mat-icon>
+            <span> Listar emprestimos </span>
+          </div>
+        </a>
+        <a mat-list-item routerLink="/pages/listagem-livro/listar">
+          <div class="item">
+            <mat-icon class="icon"> list </mat-icon>
+            <span> Listar livros </span>
+          </div>
+        </a>
+        <a mat-list-item routerLink="/pages/login-usuario/cadastrar">
+          <div class="item">
+            <mat-icon class="icon"> add </mat-icon>
+            <span> Login usuário </span>
+          </div>
+        </a>
+      </mat-nav-list>
+    </mat-sidenav>
+  
+    <!-- Conteúdo ocupando a tela inteira -->
+    <mat-sidenav-content style="height: 100vh; width: 100vw; display: flex; flex-direction: column;">
+      <router-outlet flex> </router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  

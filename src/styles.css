@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Adicione um estilo específico para o ícone do menu na cor primária */
+.mat-icon-button.menu .icon {
+    color: rgb(255, 255, 255); /* Substitua pela cor desejada */
+  }
+  

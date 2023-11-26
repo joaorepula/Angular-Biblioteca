@@ -1,20 +1,28 @@
-<h1>Listagem de produtos</h1>
+<h1>Lista de livros</h1>
 
 <table id="table">
-  <tr>
-    <th>Título</th>
-    <th>Descrição</th>
-    <th>Categoria</th>
-    <th>Status</th>
-  </tr>
-  <tr *ngFor="let p of livros">
-    <td>{{ p.livroId }}</td>
-    <td>{{ p.autor }}</td>
-    <td>{{ p.totalPaginas }}</td>
-    <td>{{ p.titulo }}</td>
-    <td>{{ p.descricao }}</td>
-    <td>{{ p.estoque }}</td>
-    <td><button (click)="emprestimo(p)">Realizar Empréstimo</button></td>
-    <td><button (click)="devolver(p)">Devolver Empréstimo</button></td>
-  </tr>
+  <thead>
+    <tr>
+      <th>LivroId</th>
+      <th>Autor</th>
+      <th>Total de Páginas</th>
+      <th>Título</th>
+      <th>Descrição</th>
+      <th>Estoque</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let livro of livros">
+      <td>{{ livro.livroId }}</td>
+      <td>{{ livro.autor }}</td>
+      <td>{{ livro.totalPaginas }}</td>
+      <td>{{ livro.titulo }}</td>
+      <td>{{ livro.descricao }}</td>
+      <td>{{ livro.estoque }}</td>
+      <td><button (click)="emprestimo(livro)">Realizar Empréstimo</button></td>
+      <td><button (click)="devolver(livro)">Devolver Empréstimo</button></td>
+    </tr>
+  </tbody>
 </table>

@@ -7,6 +7,7 @@ import { LoginUsuario } from "./pages/login-usuario/login-usuario.component";
 import { ListarLivroComponent } from "./pages/listagem-livro/listagem-livros.component";
 import { EmprestimoListarComponent } from "./pages/listagem-emprestimo/listagem-emprestimo.component";
 
+// Importações material angular
 import { HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';

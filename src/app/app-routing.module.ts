@@ -5,8 +5,6 @@ import { LoginUsuario } from "./pages/login-usuario/login-usuario.component";
 import { EmprestimoListarComponent } from "./pages/listagem-emprestimo/listagem-emprestimo.component";
 
 
-
-
 const routes: Routes = [
   {
     path : "",
@@ -20,6 +18,11 @@ const routes: Routes = [
     path : "emprestimo",
     component : EmprestimoListarComponent
   },
+  {
+    path : "emprestimo",
+    component : EmprestimoListarComponent
+  },
+  
 ];
 
 @NgModule({

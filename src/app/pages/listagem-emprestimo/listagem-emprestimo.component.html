@@ -10,6 +10,8 @@
     <th>Data de devolução</th>
   </tr>
   <tr *ngFor="let p of livros">
+
+    <td>{{ p.emprestimoId }}</td>
     <td>{{ p.livroId }}</td>
     <td>{{ p.usuarioId }}</td>
     <td>{{ p.dataEmprestimo }}</td>

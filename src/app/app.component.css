@@ -1,12 +1,11 @@
 .menu{
     background-color: transparent;
-    color: aqua;
+    color: white;
     border: none;
 }
 
 .container{
     height: calc(100% - 64px);
-    background-color: lightgray;
 }
 
 .item{
@@ -16,5 +15,8 @@
 
 .icon{
     margin-right: 8px;
-    color: aqua;
+}
+
+.licolor{
+    color: black;
 }

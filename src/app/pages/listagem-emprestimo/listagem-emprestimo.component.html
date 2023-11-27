@@ -4,10 +4,13 @@
 
 <table id="table">
   <tr>
+    <th>EmprestimoId</th>
     <th>livroId</th>
     <th>UsuarioId</th>
   </tr>
   <tr *ngFor="let p of livros">
+
+    <td>{{ p.emprestimoId }}</td>
     <td>{{ p.livroId }}</td>
     <td>{{ p.usuarioId }}</td>
   </tr>

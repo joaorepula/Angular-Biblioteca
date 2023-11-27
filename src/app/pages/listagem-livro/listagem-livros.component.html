@@ -1,3 +1,5 @@
+<!-- nomedoseucomponente.component.html -->
+
 <h1>Lista de livros</h1>
 
 <table id="table">
@@ -21,8 +23,8 @@
       <td>{{ livro.titulo }}</td>
       <td>{{ livro.descricao }}</td>
       <td>{{ livro.estoque }}</td>
-      <td><button (click)="emprestimo(livro)">Realizar Empréstimo</button></td>
-      <td><button (click)="devolver(livro)">Devolver Empréstimo</button></td>
+      <td><button class="emprestimo-button" (click)="emprestimo(livro)">Realizar Empréstimo</button></td>
+      <td><button class="devolver-button" (click)="devolver(livro)">Devolver Empréstimo</button></td>
     </tr>
   </tbody>
 </table>

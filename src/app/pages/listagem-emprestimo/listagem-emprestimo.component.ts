@@ -24,6 +24,7 @@ export class EmprestimoListarComponent {
     this.client.get<Emprestimo[]>(`https://localhost:7150/api/emprestimo/listar-emprestimo/${this.usuarioId}`)
       .subscribe({
         next: (emprestimos) => {
+          console.log(emprestimos)
           this.livros = emprestimos;
         }, 
         error: (erro) => {

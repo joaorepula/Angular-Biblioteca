@@ -4,11 +4,15 @@
 
 <table id="table">
   <tr>
-    <th>livroId</th>
-    <th>UsuarioId</th>
+    <th>Identificação do Livro</th>
+    <th>Identificação do Usuário</th>
+    <th>Data de início</th>
+    <th>Data de devolução</th>
   </tr>
   <tr *ngFor="let p of livros">
     <td>{{ p.livroId }}</td>
     <td>{{ p.usuarioId }}</td>
+    <td>{{ p.dataEmprestimo }}</td>
+    <td>{{ p.dataFinal }}</td>
   </tr>
 </table>

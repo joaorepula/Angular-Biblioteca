@@ -3,7 +3,7 @@ export interface Emprestimo {
     livroId: number;
     usuarioId: number;
     dataEmprestimo: Date;
-    dataDevolucao: Date;
+    dataFinal: Date;
 }
 
 
